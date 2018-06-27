@@ -1,0 +1,17 @@
+.top{
+    width: 400rpx;
+    margin: 0 auto;
+}
+.top view{
+    text-align: center;
+}
+.top .zan-icon-checked{
+    font-size:300rpx;
+    display:block;
+    color: green;
+}
+.btn-bottom{
+    width: 90%;
+    background: red;
+    color: white;
+}

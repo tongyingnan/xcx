@@ -1,0 +1,21 @@
+<view class="companyMemberDetail">
+    <view class="register-member-title">
+        <text>企业成员信息</text>
+    </view>
+    <form class="form-member-register" bindsubmit="sureChangeMember">
+        <view>
+            <span>所在城市</span><input name="city" value="{{companyMemberDetail.city_name}}"/>
+        </view>
+        <view>
+            <span>真实姓名</span><input name="realName" class="input-name" value="{{companyMemberDetail.full_name}}"/>
+        </view>
+        <view>
+            <span>电话号码</span><input name="phone" class="phone" value="{{companyMemberDetail.phone_number}}"/>
+        </view>
+        <view>
+            <span>{{switchMsg}}</span>
+            <switch checked bindchange="switchChange"/>
+        </view>
+        <button formType="submit" class="btn-register" style="width:90%;margin-top:100px;background:red;color:white;">保存更改</button>
+    </form>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "居外通",
+  "usingComponents": {
+    "component-footer": "../../component/footer/footer"
+  }
+}

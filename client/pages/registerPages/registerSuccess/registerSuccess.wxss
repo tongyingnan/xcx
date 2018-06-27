@@ -1,0 +1,49 @@
+.top{
+    width: 400rpx;
+    margin: 0 auto;
+}
+.top view{
+    text-align: center;
+}
+.top .zan-icon-checked{
+    font-size:300rpx;
+    display:block;
+    color: green;
+}
+.middle{
+    width: 500rpx;
+    margin: 0 auto;
+}
+.middle view{
+    text-align: left;
+}
+.middle span{
+    margin-left: 40rpx;
+    font-size: 15px;
+}
+.btn-bottom{
+    width: 90%;
+    background: red;
+    color: white;
+    margin-top: 10px;
+}
+.skip{
+    text-align: center;
+}
+a{
+    display: inline-block;
+    width: 10px;height:5px;
+    background: black;
+    line-height: 0;
+    font-size:0;
+    vertical-align: middle;
+    -webkit-transform: rotate(45deg);
+}
+a:after{
+    content:'/';
+    display:block;
+    width: 20px;
+    height:5px;
+    background: black;
+    -webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);
+}

@@ -1,0 +1,15 @@
+.report view{
+    padding: 5px 0 5px 10px;
+}
+.title{
+    background: gainsboro;
+    color: gray;
+    padding: 10px 0 10px 20px;
+}
+.report input,textarea{
+    display: inline-block;
+    padding-left: 10px;
+}
+textarea{
+    font-size: 12px;
+}

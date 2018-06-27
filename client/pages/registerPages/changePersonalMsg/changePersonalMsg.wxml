@@ -1,0 +1,29 @@
+<view class="changePersonalMsg">
+    <view class="profile-userinfo">
+        <image class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover" style="width:80px;height:80px;"></image>
+        <text class="userinfo-nickname" style="color:white;position:relative;top:-60rpx;right:-70rpx;">{{nickName}}</text>
+        <text class="userinfo-nickname" style="color:white;">{{phoneNumber}}</text>
+    </view>
+    <view class="title">经纪个人信息</view>
+    <form class="personalMsgList" bindsubmit="sureChange">
+        <view>
+            <text>所在城市</text>
+            <input placeholder="{{oldMsg.city_name}}" name="city" value="{{oldMsg.city_name}}"/>
+        </view>
+        <view>
+            <text>真实姓名</text>
+            <input placeholder="{{oldMsg.full_name}}" style="width:460rpx;" name="realName" value="{{oldMsg.full_name}}"/>
+        </view>
+        <view>
+            <form bindsubmit="getSms">
+                <span>手机号码</span><input name="phone" class="input-phone" style="width:240rpx;" value="{{oldMsg.phone_number}}"/>
+                <button formType="submit" style="display:inline-block;background:gray;color:white;" size="mini" wx:if="{{isShowSms}}">获取验证码</button>
+                <button style="display:inline-block;background:green;color:white;" size="mini" disabled="true" wx:if="{{isShowTime}}">{{time}}</button>
+            </form>
+        </view>
+        <view>
+            <span>验证码</span><input name="sms" class="sms"/>
+        </view>
+        <button formType="submit" class="btn-register" style="width:90%;margin-top:100px;background:red;color:white;" disabled="{{isDisabled}}">保存</button>
+    </form>
+</view>

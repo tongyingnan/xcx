@@ -1,0 +1,60 @@
+<view class="profile">
+    <view class="profile-userinfo">
+        <image class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover" style="width:80px;height:80px;"></image>
+        <text class="userinfo-nickname" style="color:white;position:relative;top:-60rpx;right:-70rpx;">{{nickName}}</text>
+        <text class="userinfo-nickname" style="color:white;">{{phoneNumber}}</text>
+    </view>
+    <view class="profile-top">
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-rating-50.png"></image>
+            <text bindtap="goToCollect">我的收藏</text>
+        </view>
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-real-estate-50.png"></image>
+            <text bindtap="goToBrowsed">浏览过的项目</text>
+        </view>
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-member-50.png"></image>
+            <text bindtap="goToConsumers">我的客户</text>
+        </view>
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-password-50.png"></image>
+            <text bindtap="goToProgress">交易进度</text>
+        </view>
+    </view>
+    <view class="profile-bottom">
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-view-50 (1).png"></image>
+            <text bindtap="goToProjectList">浏览最新项目</text>
+        </view>
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-in-progress-50.png"></image>
+            <text bindtap="goToCompanyDetail">所属企业</text>
+            <text style="font-size:12px;">{{companyName}}</text>
+            <text style="font-size:12px;border:1px solid black;">{{verificationMsg}}</text>
+        </view>
+        <view wx:if="{{isShowMember}}">
+            <image src="http://www.tongtannan.com/project2/assets/icons8-member-50.png"></image>
+            <text bindtap="goToCompanyMember">企业成员 </text>
+            <text style="font-size:12px;">共{{companyMemberCount}}位</text>
+        </view>
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-pencil-drawing-50.png"></image>
+            <text bindtap="goToChangePersonalMsg">编辑个人信息</text>
+        </view>
+        <view wx:if="{{isShowVerification}}" bindtap="goToRealname">
+            <image src="http://www.tongtannan.com/project2/assets/icons8-approval-50 (1).png"></image>
+            <text>实名认证</text>
+        </view>
+        <view>
+            <image src="http://www.tongtannan.com/project2/assets/icons8-password-50.png"></image>
+            <text bindtap="goToChangePwd">修改密码</text>
+        </view>
+        <view bindtap="goToProblems">
+            <image src="http://www.tongtannan.com/project2/assets/icons8-help-50.png"></image>
+            <text>常见问题</text>
+        </view>
+    </view>
+    <button type="warn" bindtap="signOut" style="width:90%;background:red;">退出登入</button>
+    <component-footer></component-footer>
+</view>

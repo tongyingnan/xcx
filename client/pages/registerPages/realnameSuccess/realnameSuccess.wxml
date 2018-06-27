@@ -1,0 +1,12 @@
+<view class="realnameSuccess">
+    <view class="top">
+        <view style="margin-bottom:20px;">您已提交实名认证申请</view>
+        <view class="zan-icon zan-icon-clock" style="color: #cccccc;font-size:150px;"></view>
+        <view style="margin-top:20px;">我们会在三个工作日内处理审核</view>
+        <view>请保持电话畅通</view>
+    </view>
+    <view class="bottom" style="background:#ebebeb;padding:50px 10px 20px 10px;">
+        <button style="background:red;width:90%;margin-bottom:20px;" bindtap="goToProject">浏览房源</button>
+        <button style="background:#666666;width:90%;" bindtap="goToProfile">返回我的主页</button>
+    </view>
+</view>

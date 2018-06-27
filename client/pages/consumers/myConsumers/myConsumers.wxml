@@ -1,0 +1,26 @@
+<view class="my-consumers">
+    <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" range-key="value">
+            <view class="picker">
+                {{array[index].value}}
+            </view>
+        </picker>
+    </view>
+
+    <view>已报备客户列表 （共{{consumerList.length}}个）</view>
+    <view wx:for="{{consumerList}}" class="consumer-list">
+        <view class="consumer-msg">
+            <view style="font-size:16px;font-weight:bold;">{{item.full_name}} {{item.name_prefix === 'sir' ? '先生' : '女士'}}</view>
+            <view>
+                测试房产
+                <text class="consumer-status">
+                    {{item.status === -1 ? '已失效' : item.status === 0 ? '待跟进' : item.status === 1 ? '首次通话' : item.status === 2 ? '到访' :
+                    item.status === 3 ? '认筹' : item.status === 4 ? '认购并交易' : '交易完成'}}
+                </text>
+                <text class="triangle" bindtap="goToConsumerDetail" id="{{item.id}}"></text>
+            </view>
+            <view style="margin-top:-20px;">报备日期：{{item.updated_at}}</view>
+        </view>
+    </view>
+    <button class="report" bindtap="goToReport">推荐客户</button>
+</view>

@@ -1,0 +1,14 @@
+.title{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.text{
+    padding: 20px;
+    color: grey;
+    font-size: 12px;
+}
+button{
+    width: 90%;
+    color: white;
+    background: red;
+}

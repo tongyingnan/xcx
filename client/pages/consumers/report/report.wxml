@@ -1,0 +1,43 @@
+<view class="report">
+    <form bindsubmit="sureReport">
+        <view class="title">客户感兴趣的房产项目</view>
+        <input name="project" disabled="true" placeholder="{{projectDetail.project_name}}" style="width:240px;"/><text wx:if="{{isShowAdd}}" bindtap="addReport">新增项目</text>
+        <view class="title">客户信息</view>
+        <view>
+            真实姓名<input name="realName"/>
+        </view>
+        <view>
+            称谓<input name="sex"/>
+        </view>
+        <view>
+            手机号码<input name="phone"/>
+        </view>
+        <view>
+            电邮地址<input name="email"/>
+        </view>
+        <view class="title">客户意向</view>
+        <view>
+            目标国家<input name="country"/>
+        </view>
+        <view>
+            房产类型<input name="type"/>
+        </view>
+        <view>
+            价格预算<input name="budget"/>
+        </view>
+        <view>
+            购房目的<input name="purpose"/>
+        </view>
+        <view class="title">备注/留言</view>
+        <textarea name="msg"></textarea>
+        <view class="title">注意事项</view>
+        <view style="font-size:12px;">{{matter}}</view>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}" name="{{item.name}}"/>{{item.value}}
+                <span style="color:red;">《用户报备条款及规则》</span>
+            </label>
+        </radio-group>
+        <button formType="submit" class="btn-register" style="margin-top:100px;background:red;color:white;">提交</button>
+    </form>
+</view>

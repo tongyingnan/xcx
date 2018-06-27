@@ -1,0 +1,5 @@
+<view class="problem1">
+    <view class="title">什么是居外通？</view>
+    <view class="text">国内房地产经纪方及有客户资源的公司均可以申请代理海外房产项目的平台</view>
+    <button bindtap="return">返回</button>
+</view>

@@ -1,0 +1,33 @@
+.profile-userinfo{
+    background:red;
+    padding:10px;
+}
+.profile-top{
+    text-align: center;
+}
+.profile-top view{
+    display: inline-block;
+    margin:10px;
+}
+.profile-top image{
+    width: 50px;
+    height: 50px;
+}
+.profile-top text{
+    display:block;
+    font-size:14px;
+}
+.profile-bottom view{
+    margin-bottom: 10px;
+    margin-left:20px;
+    border-bottom: 1px solid gray;
+}
+.profile-bottom image{
+    width: 25px;
+    height: 25px;
+    position:relative;
+    bottom:-4px;
+}
+.profile-bottom text{
+    margin-left:10px;
+}

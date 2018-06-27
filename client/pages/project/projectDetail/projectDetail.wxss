@@ -1,0 +1,72 @@
+.project-detail{
+    font-size: 12px;
+}
+.project-detail-title{
+    display: inline-block;
+}
+.project-detail-title text{
+    display: block;
+}
+.project-bottom{
+    width: 100%;
+}
+.project-bottom view{
+    float: left;
+    padding:8px;
+    border: 1px solid;
+    width: 20%;
+}
+.project-bottom .textNumber{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+.project-bottom view text{
+    display: block;
+    text-align: center;
+}
+.btn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    width: 100%;
+    color: white;
+}
+.btn view{
+    display: inline-block;
+}
+.btn,.btn-top,button{
+    height: 100rpx;
+}
+.btn-top{
+    background: #999999;
+    width: 40%;
+    position:relative;
+    top:-26rpx;
+}
+.btn-top .zan-icon{
+    padding: 1px 12px;
+}
+.btn-top .text{
+    padding: 5px 10px;
+}
+.btn button{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 100rpx;
+    width: 30%;
+    border-radius: 0;
+    color: white;
+}
+.tab text{
+    display: inline-block;
+    border: 1px solid black;
+    height: 30px;
+    line-height: 30px;
+    width: 49%;
+    text-align: center;
+}
+.tab,.tab-img{
+    margin-bottom: 50px;
+}

@@ -1,0 +1,16 @@
+.title{
+    background: gray;
+    padding: 10px;
+}
+.personalMsgList view{
+    padding-left: 15px;
+    border-bottom: 1px solid gray;
+}
+.personalMsgList text{
+
+}
+.personalMsgList input{
+    display: inline-block;
+    margin-left: 50px;
+    width: 180px;
+}

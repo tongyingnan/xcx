@@ -1,0 +1,10 @@
+.companyMember text{
+    font-size: 12px;
+    color: gray;
+    margin-right: 10px;
+}
+.memberMsg{
+    position:relative;
+    top:-200rpx;
+    right:-200rpx;
+}

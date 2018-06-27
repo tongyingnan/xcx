@@ -1,0 +1,10 @@
+<view class="addReport">
+    <view class="title">
+        新增项目
+    </view>
+    <scroll-view scroll-y="true" bindscrolltolower="load" class="scroll-loading" style="height:{{windowHeight}}px;">
+        <view class="projectList" wx:for="{{projectList}}" style="padding:10px;border-bottom:1px solid gray;" bindtap="addReport" id="{{item.id}}">
+            {{item.id}}
+        </view>
+    </scroll-view>
+</view>

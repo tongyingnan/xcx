@@ -1,0 +1,16 @@
+.companyMsg{
+    background: gray;
+    padding: 10px;
+}
+.companyMsgList view{
+    padding-left: 15px;
+    border-bottom: 1px solid gray;
+}
+.companyMsgList text{
+
+}
+.companyMsgList input{
+    display: inline-block;
+    margin-left: 50px;
+    width: 180px;
+}

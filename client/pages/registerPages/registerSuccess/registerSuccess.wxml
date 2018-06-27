@@ -1,0 +1,28 @@
+<view class="registerSuccess">
+    <view class="top">
+        <view style="margin-top:20px;">您已成功注册加盟</view>
+        <view>居外经纪联盟</view>
+        <view class="zan-icon zan-icon-checked"></view>
+    </view>
+    <view class="middle">
+        <view style="width:500rpx;font-weight:bold;margin:10px;">马上实名认证，开通以下特权</view>
+        <view><a></a><span>成为居外优选房产项目代理</span></view>
+        <view><a></a>
+            <span>佣金一键提现</span>
+        </view>
+        <view><a></a>
+            <span>海外购房指南</span>
+        </view>
+        <view><a></a>
+            <span>多国学区地图</span>
+        </view>
+        <view><a></a>
+            <span>投资移民手册</span>
+        </view>
+        <view><a></a>
+            <span>最新海外房产市场报告</span>
+        </view>
+    </view>
+    <button class="btn-bottom" bindtap="returnProfile">去实名认证</button>
+    <view class="skip" bindtap="skip">略过</view>
+</view>

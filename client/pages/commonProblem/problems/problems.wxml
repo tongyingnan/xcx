@@ -1,0 +1,11 @@
+<view class="problems">
+    <!--<image src="http://simages6.juwai.com/auto/240x160/store-aa/817fe22d377f310e1e7db06ba4c43479.jpg" style="width:100%;"></image>-->
+    <video style="width:100%;" src="http://ugcyd.qq.com/p0533i84dgu.p712.1.mp4?sdtfrom=v1010&guid=f9783841aa3320ba5c235af78b2eb5b5&vkey=FEBB9DB27E17ED5D08E55DD318AB6A023B67176E72F87600EF0A660FABD2E0CF1F4D4B0FC206F9286E3A6BAC947A8CDB535D352F55C98CE4B9B9CFA68C140580515716E6DCB286E0F013C4BC1D8CBAF7BF95572BC14EE37ED497D9307AF2513A464CF0E8A1B04A075D82914188C8F302F284363CD6569D81"></video>
+    <view bindtap="goToProblem1">什么是居外通</view>
+    <view bindtap="goToProblem1">什么是居外通</view>
+    <view bindtap="goToProblem1">什么是居外通</view>
+    <view bindtap="goToProblem1">什么是居外通</view>
+    <view bindtap="goToProblem1">什么是居外通</view>
+    <view bindtap="goToProblem1">什么是居外通</view>
+    <component-footer></component-footer>
+</view>
