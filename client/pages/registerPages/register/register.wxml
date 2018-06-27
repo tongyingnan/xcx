@@ -1,0 +1,14 @@
+<view class="register">
+    <view class="register-title">
+        <text>企业信息</text>
+    </view>
+    <form class="form-register" bindsubmit="sureRegister">
+        <view>
+            <span>企业名称</span><input placeholder="请输入企业名称" name="companyName"/>
+        </view>
+        <view>
+            <span>所在城市</span><input name="city" class="input-pwd"/>
+        </view>
+        <button formType="submit" class="btn-register" style="margin-top:100px;background:red;color:white;">下一步，企业管理员信息</button>
+    </form>
+</view>

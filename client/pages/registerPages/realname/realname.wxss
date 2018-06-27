@@ -1,0 +1,18 @@
+.title{
+    background: #ebebeb;
+    padding: 10px;
+    color: gray;
+}
+ul li{
+    display:block;
+    padding:10px;
+    font-size: 12px;
+}
+form view:not(.title){
+    margin-left: 10px;
+}
+input{
+    display: inline-block;
+    padding-top:10px;
+    padding-left: 10px;
+}

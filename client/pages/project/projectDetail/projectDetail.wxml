@@ -1,0 +1,70 @@
+<import src="../../../zanui/dialog/index.wxml" />
+
+<view class="project-detail">
+<template is="zan-dialog" data="{{ zanDialog }}"></template>
+    <image src="{{projectDetail.images[0]}}" style="width:100%;"></image>
+    <view class="project-detail-title">
+        <text style="font-size:14px;font-weight:bold;">{{projectDetail.project_name}}</text>
+        <text>{{projectDetail.location.country_name}} {{projectDetail.location.region_name}}</text>
+    </view>
+    <view class="project-detail-title" style="margin-left:100px;">
+        <text style="color:red;">{{projectDetail.price}}</text>
+        <text>整栋价格/人民币</text>
+    </view>
+    <view class="project-bottom">
+        <view style="border-right:none;">
+            <text class="textNumber">{{projectDetail.size}}</text>
+            <text>平方米</text>
+        </view>
+        <view style="border-right:none;">
+            <text class="textNumber">{{projectDetail.down_payment_rate}}%</text>
+            <text>首付</text>
+        </view>
+        <view style="border-right:none;">
+            <text class="textNumber">{{projectDetail.down_payment_rate}}%</text>
+            <text>佣金</text>
+        </view>
+        <view>
+            <text class="textNumber">{{projectDetail.rent_return_reference}}%</text>
+            <text>参考佣金回报</text>
+        </view>
+        <!--<view></view>-->
+    </view>
+    <view wx:if="{{!isShowDialog}}">
+        <view>地理环境</view>
+        <map id="map" longitude="120.12" latitude="30.2459" scale="14" markers="{{markers}}" show-location style="width: 100%; height: 300px;"></map>
+        <view class="tab">
+            <text style="border-right:none;border-bottom:{{borderBottom1}};" bindtap="tab1">户型图</text>
+            <text bindtap="tab2" style="border-bottom:{{borderBottom2}};">楼盘照片</text>
+        </view>
+        <cover-view class="pause" bindtap="pause" wx:if="{{isShowCover}}">
+            <cover-image class="img" src="{{coverSrc}}" />
+        </cover-view>
+        <view class="tab-img" wx:if="{{isShowTab}}">
+            <scroll-view scroll-x="true">
+                <view style="width:{{projectDetail.images.length*160}}px;height:120px;">
+                    <image wx:for="{{projectDetail.floorplans}}" src="{{item}}" style="width:160px;height:120px;" bindtap="clickImg" data-src="{{item}}"></image>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="tab-img" wx:if="{{!isShowTab}}">
+            <scroll-view scroll-x="true">
+                <view style="width:{{projectDetail.images.length*160}}px;height:120px;">
+                    <image wx:for="{{projectDetail.images}}" src="{{item}}" style="width:160px;height:120px;" bindtap="clickImg" data-src="{{item}}"></image>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="btn">
+        <view style="width:300rpx;" class="btn-top">
+            <view class="zan-icon zan-icon-phone" style="color: white;margin-right:14rpx;"></view>
+            <view class="zan-icon zan-icon-phone" style="color: white;margin-right:24rpx;"></view>
+            <view class="zan-icon zan-icon-like-o" style="color: white;"></view>
+            <view class="text">分享</view>
+            <view class="text" bindtap="consult">咨询</view>
+            <view class="text" bindtap="collect" id="{{projectDetail.id}}">收藏</view>
+        </view>
+        <button style="background:#333333;">查看结佣流程</button>
+        <button bindtap="report" id="{{projectDetail.id}}" style="background:#a41a2a;">我要推荐</button>
+    </view>
+</view>

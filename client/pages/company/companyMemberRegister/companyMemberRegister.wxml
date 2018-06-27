@@ -1,0 +1,36 @@
+<view class="register-member-register">
+    <view class="register-member-title">
+        <text>企业成员信息</text>
+    </view>
+    <form class="form-member-register" bindsubmit="sureRegisterMember">
+        <view>
+            <span>所在城市</span><input name="city"/>
+        </view>
+        <view>
+            <span>真实姓名</span><input name="realName" class="input-name"/>
+        </view>
+        <view>
+            <form bindsubmit="getSms">
+                <span>手机号码</span><input name="phone" class="input-phone" style="width:190px;"/>
+                <button formType="submit" style="display:inline-block;background:gray;color:white;" size="mini" wx:if="{{isShowSms}}">获取验证码</button>
+                <button style="display:inline-block;background:green;color:white;" size="mini" disabled="true" wx:if="{{isShowTime}}">{{time}}</button>
+            </form>
+        </view>
+        <view>
+            <span>验证码</span><input name="sms" class="sms"/>
+        </view>
+        <view>
+            <span>登入密码</span><input name="pwd" class="input-pwd"/>
+        </view>
+        <view>
+            <span>请再次输入密码</span><input name="pwd2" class="input-pwd-2"/>
+        </view>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}" name="{{item.name}}"/>{{item.value}}
+                <span style="color:red;">《居外用户条款》</span>
+            </label>
+        </radio-group>
+        <button formType="submit" class="btn-register" style="margin-top:100px;background:red;color:white;">注册</button>
+    </form>
+</view>

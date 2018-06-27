@@ -1,0 +1,39 @@
+.consumer-list{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.consumer-msg view{
+    font-size: 12px;
+    color: gray;
+}
+.consumer-status,.triangle{
+    position:relative;
+    right:-500rpx;
+    font-size:16px;
+    font-weight:bold;
+}
+.triangle{
+    display: inline-block;
+    border-right: 2px solid gray;
+    border-top: 2px solid gray;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    right:-600rpx;
+    top:-40rpx;
+    /*border: 10px solid transparent;*/
+    /*border-top-color: white;*/
+    /*width: 0px;*/
+    /*height: 0;*/
+}
+.report{
+    width: 90%;
+    background: red;
+    color: white;
+    margin-bottom: 10px;
+}

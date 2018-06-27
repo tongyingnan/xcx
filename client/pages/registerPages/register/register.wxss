@@ -1,0 +1,9 @@
+.register-title{
+    background: gray;
+    padding: 10px;
+}
+.form-register input{
+    display: inline-block;
+    padding-top:10px;
+    padding-left:10px;
+}

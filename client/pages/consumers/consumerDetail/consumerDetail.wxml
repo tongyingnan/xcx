@@ -1,0 +1,21 @@
+<import src="../../../zanui/steps/index.wxml" />
+
+<view class="consumer-detail">
+    <view class="top">
+        <view>{{projectDetail.project_name}}</view>
+        <view>🇲🇾{{projectDetail.location.country_code}} {{projectDetail.location.country_name}}</view>
+        <text class="triangle" bindtap="goToProjectDetail" id="{{projectDetail.id}}"></text>
+    </view>
+    <view class="middle">
+        <view>{{consumerDetail.full_name}}</view>
+        <view>{{consumerDetail.phone}}</view>
+        <view style="color:gray;">推荐日期：{{consumerDetail.created_at}}</view>
+    </view>
+    <view class="zan-panel">
+        <view class="zan-cell zan-cell">
+            <view class="zan-cell__bd">
+                <template is="zan-steps" data="{{ type: 'vertical', hasDesc: true, steps }}"></template>
+            </view>
+        </view>
+    </view>
+</view>

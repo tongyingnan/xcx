@@ -1,0 +1,34 @@
+<view class="companyDetail">
+    <view class="companyMsg">企业信息</view>
+    <form class="companyMsgList" bindsubmit="sureChange">
+        <view>
+            <text>企业名称</text>
+            <input placeholder="{{companyDetail.company_name}}" disabled="{{isDisabled}}" name="companyName" value="{{companyDetail.company_name}}"/>
+        </view>
+        <view>
+            <text>营业执照号码</text>
+            <input placeholder="{{companyDetail.business_license_number}}" style="margin-left:24rpx;" disabled="{{isDisabled}}" name="businessLicenseNumber" value="{{companyDetail.business_license_number}}"/>
+        </view>
+        <view>
+            <text>纳税人识别号</text>
+            <input placeholder="{{companyDetail.taxpayer_id_number}}" style="margin-left:24rpx;" disabled="{{isDisabled}}" name="taxpayerIdNumber" value="{{companyDetail.taxpayer_id_number}}"/>
+        </view>
+        <view>
+            <text>主要业务</text>
+            <input placeholder="{{companyDetail.main_business}}" disabled="{{isDisabled}}" name="mainBusiness" value="{{companyDetail.main_business}}"/>
+        </view>
+        <view>
+            <text>所在城市</text>
+            <input placeholder="{{companyDetail.city_name}}" disabled="{{isDisabled}}" name="cityName" value="{{companyDetail.city_name}}"/>
+        </view>
+        <view>
+            <text>办公地址</text>
+            <input placeholder="{{companyDetail.contract_recipient_location}}" disabled="{{isDisabled}}" name="contractRecipientLocation" value="{{companyDetail.contract_recipient_location}}"/>
+        </view>
+        <view>
+            <text>员工数目</text>
+            <input placeholder="{{companyDetail.employee_number}}" disabled="{{isDisabled}}" name="employeeNumber" value="{{companyDetail.employee_number}}"/>
+        </view>
+        <button formType="submit" class="btn-register" style="width:90%;margin-top:100px;background:red;color:white;" disabled="{{isDisabled}}">保存</button>
+    </form>
+</view>

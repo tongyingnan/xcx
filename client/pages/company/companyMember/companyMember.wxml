@@ -1,0 +1,18 @@
+<view class="companyMember">
+    <view wx:for="{{companyMemberMsg}}" style="border-bottom:1px solid gray;margin-bottom:10px;">
+        <image src="../../index/user-unlogin.png" style="width:100px;height:100px;"></image>
+        <view class="memberMsg">
+            <view>{{item.full_name}}</view>
+            <view>
+                <text>已推荐客户：{{item.consumer_counts.recommended}}</text>
+                <text>已签约客户：{{item.consumer_counts.visited}}</text>
+            </view>
+            <view>
+                <text>已到访客户：{{item.consumer_counts.contract_signed}}</text>
+                <text>已成交客户：{{item.consumer_counts.transaction_complete}}</text>
+            </view>
+        </view>
+        <button style="width:10%;position:relative;top:-300rpx;right:-290rpx;" id="{{item.id}}" bindtap="goToCompanyDetail"> > </button>
+    </view>
+    <button style="width:90%;background:red;color:white;" bindtap="goToRegister">新成员</button>
+</view>

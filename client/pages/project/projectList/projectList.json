@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "项目列表",
+  "usingComponents": {
+    "component-footer": "../../../component/footer/footer"
+  }
+}

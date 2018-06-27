@@ -1,0 +1,18 @@
+<view class="changePwd">
+    <view class="title">修改密码</view>
+    <form class="personalMsgList" bindsubmit="sureChange">
+        <view>
+            <text>原密码</text>
+            <input name="oldPwd"/>
+        </view>
+        <view>
+            <text>新密码</text>
+            <input style="width:460rpx;" name="newPwd1"/>
+        </view>
+        <view>
+            <text>再次输入新密码</text>
+            <input name="newPwd2" style="width:340rpx;"/>
+        </view>
+        <button formType="submit" class="btn-register" style="width:90%;margin-top:100px;background:red;color:white;">保存</button>
+    </form>
+</view>

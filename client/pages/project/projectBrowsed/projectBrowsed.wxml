@@ -1,0 +1,50 @@
+<import src="../../../zanui/tab/index.wxml" />
+<import src="../../../zanui/dialog/index.wxml" />
+
+<view class="container">
+    <template is="zan-dialog" data="{{ zanDialog }}"></template>
+    <scroll-view scroll-y="true" bindscrolltolower="load" class="scroll-loading" style="height:{{windowHeight}}px;">
+        <view class="projectList" wx:for="{{projectList}}">
+            <view class="projectTop" bindtap="goToProjectDetail" id="{{item.id}}">
+                <view class="projectTopLeft">
+                    <text>{{item.location.country_name}} , </text>
+                    <text>{{item.location.region_name}}</text>
+                </view>
+                <view class="projectTopRight">
+                    <text style="color:red;font-size:14px;font-weight:bold;">{{item.price}}</text>
+                    <text style="text-align:right;">整栋价格/人民币</text>
+                </view>
+            </view>
+            <scroll-view class="project-img" scroll-x="true">
+                <view style="height:100px;width:3000px;">
+                    <image wx:for="{{item.images}}" wx:for-item="image" src="{{image}}"></image>
+                </view>
+            </scroll-view>
+            <view class="project-bottom">
+                <view style="border-right:none;">
+                    <text class="textNumber">{{item.size}}</text>
+                    <text>平方米</text>
+                </view>
+                <view style="border-right:none;">
+                    <text class="textNumber">{{item.down_payment_rate}}%</text>
+                    <text>首付</text>
+                </view>
+                <view style="border-right:none;">
+                    <text class="textNumber">{{item.down_payment_rate}}%</text>
+                    <text>佣金</text>
+                </view>
+                <view>
+                    <text class="textNumber">{{item.rent_return_reference}}%</text>
+                    <text>参考佣金回报</text>
+                </view>
+                <!--<view></view>-->
+            </view>
+            <view class="btn">
+                <button>查看结佣流程</button>
+                <button bindtap="goToReport" id="{{item.id}}">我要推荐</button>
+                <button bindtap="collect">
+                    <image class="star-five" src="{{url}}" style="width:15px;height:15px;"></image>收藏</button>
+            </view>
+        </view>
+    </scroll-view>
+</view>

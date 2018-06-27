@@ -1,0 +1,37 @@
+{
+  "pages":[
+
+    "pages/profile/profile",
+    "pages/company/companyMember/companyMember",
+    "pages/company/companyMemberDetail/companyMemberDetail",
+    "pages/index/index",
+    "pages/company/companyDetail/companyDetail",
+    "pages/company/companyMemberRegister/companyMemberRegister",
+    "pages/company/memberRegisterSuccess/memberRegisterSuccess",
+    "pages/registerPages/registerNext/registerNext",
+    "pages/registerPages/registerSuccess/registerSuccess",
+    "pages/registerPages/register/register",
+    "pages/registerPages/changePersonalMsg/changePersonalMsg",
+    "pages/registerPages/changePwd/changePwd",
+    "pages/registerPages/realname/realname",
+    "pages/registerPages/realnameSuccess/realnameSuccess",
+    "pages/project/projectList/projectList",
+    "pages/project/projectCollect/projectCollect",
+    "pages/project/projectBrowsed/projectBrowsed",
+    "pages/project/projectDetail/projectDetail",
+    "pages/consumers/addReport/addReport",
+    "pages/consumers/report/report",
+    "pages/consumers/myConsumers/myConsumers",
+    "pages/consumers/consumerDetail/consumerDetail",
+    "pages/addCgi/addCgi",
+    "pages/commonProblem/problems/problems",
+    "pages/commonProblem/problem1/problem1"
+  ],
+  "window":{
+    "backgroundColor":"white",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "居外通",
+    "navigationBarTextStyle":"black"
+  }
+}

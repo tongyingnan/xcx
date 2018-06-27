@@ -1,0 +1,63 @@
+.container{
+    font-size: 12px;
+}
+.scroll-loading{
+    height:2800px;
+}
+.projectList{
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 20px solid gray;
+}
+.projectTopLeft{
+    float: left;
+}
+.projectTopRight{
+    float: right;
+}
+.projectTopRight text{
+    display: block;
+}
+.project-img{
+    width: 700rpx;
+    height: 100px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.projectTop,.project-img{
+    margin-left: 10px;
+}
+.project-img image{
+    width: 280rpx;
+    height: 180rpx;
+    float: left;
+    margin-right: 10px;
+}
+.project-bottom{
+    width: 100%;
+}
+.project-bottom view{
+    float: left;
+    padding:8px;
+    border: 1px solid;
+    width: 20%;
+}
+.project-bottom .textNumber{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+.project-bottom view text{
+    display: block;
+    text-align: center;
+}
+.btn{
+    text-align: end;
+}
+.btn button{
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px;
+}
